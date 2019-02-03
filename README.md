@@ -1,1 +1,0 @@
-My test work, responsive coding for online store of trekking gear. Used technologies HTML5/CSS3(FlexBox);

@@ -1,238 +1,124 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trekking</title>
-	
-	<!--<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">-->
-	
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<!--Adding JQueary for smooth scroll anchor-->
-	
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>      
+  <title>Responsive</title>
 </head>
 <body>
+	<div class="wrapper">
 	<header>
-		<div class="wrapper">
+		<div class="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="brend">
+				<h1>Travel<span>Blog</span></h1>
+			</div>
 			<nav>
-				<div class="logo">
-					<a href="#">
-						<img src="img/Home/Navbar/Livello8.svg" alt="">
-					</a>
+				<div class="nav-elm">
+					<a href="#" tabindex="1">Home</a>
 				</div>
-				<ul class="nav-bar">
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">Products</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/Home/Navbar/fa-shopping-cart.svg" alt="">
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header-block">
-				<h1>Our clothing , your comfort</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita numquam aperiam, illum ex dolorem consequuntur</p>
+				<div class="nav-elm">
+					<a href="#" tabindex="2">About</a>
+				</div>
+				<div class="nav-elm">
+					<a href="#" tabindex="3">Archive</a>
+				</div>
+				<div class="nav-elm">
+					<a href="#" tabindex="4">Contact</a>
+				</div>
+      </nav>
+		</header>
+	<main>
+		<div class="content-box">
+			<div class="content-elm">
+				<div class="cnt-img">
+					<img src="assets/post1.jpg" alt="post1">
+				</div>
+				<div class="cnt-text">
+					<h2>My responsive template</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi sit veniam vel. Totam placeat quasi tenetur dolorem accusamus unde voluptates.</p>
+				</div>
+				<div class="cnt-date">
+					<p><span>07</span><br>mar</p>
+					</div>
 			</div>
-			<div class="anchor">
-				<a href="index.html#config-block" onclick="slowScroll('#config-block')"><img src="img/Home/fa-chevron-down.svg" alt=""></a>
+			<div class="content-elm">
+				<div class="cnt-img">
+					<img src="assets/post2.jpg" alt="post2">
+				</div>
+				<div class="cnt-text">
+					<h2>Amazing travel blog</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, quia ullam minima fuga saepe molestias autem distinctio iure rem eum beatae neque.</p>
+					</div>
+					<div class="cnt-date">
+						<p><span>06</span><br>mar</p>
+					</div>
+				</div>
+			<div class="content-elm">
+				<div class="cnt-img">
+					<img src="assets/post3.jpg" alt="post3">
+				</div>
+				<div class="cnt-text">
+					<h2>Nice minimalist travel</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, est?</p>
+				</div>
+				<div class="cnt-date">
+						<p><span>04</span><br>mar</p>
+					</div>
 			</div>
-			<script>
-			function slowScroll (id) {
-			  
-			  $('html,body').animate ({
-				scrollTop: $(id).offset ().top - offset
-			  }, 1000);
-			  return false;
-			}
-			</script>
-		</div>
-	</header>
-	<div id="config-block">
-		<div class="wrapper">
-			<div class="btn-block">
-				<div class="checkbox">
-					<form>
-						<label class="container">Men
-  						<input type="checkbox" checked="checked">
-  						<span class="checkmark"></span>
-						</label>
-
-						<label class="container">Women
-  						<input type="checkbox">
-  						<span class="checkmark"></span>
-						</label>
-
-						<label class="container">Children
-  						<input type="checkbox">
-  						<span class="checkmark"></span>
-						</label>
-					</form>
+			<div class="content-elm">
+				<div class="cnt-img">
+					<img src="assets/post4.jpg" alt="post4">
 				</div>
-				<button>see all products</button>
+				<div class="cnt-text">
+					<h2>With amazing regions</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab repellat et, consectetur assumenda dolore possimus fuga? Vel facere ex rem repudiandae rerum consequatur?</p>
+				</div>
+				<div class="cnt-date">
+					<p><span>01</span><br>mar</p>
+					</div>
 			</div>
-		</div>
-	</div>
-	<div class="items-block">
-		<div class="wrapper">
-			<div class="men-block">
-				<div class="men-items-highline">
-					<span>MEN</span>
-					<span class="border"></span>
+			<div class="content-elm">
+				<div class="cnt-text-bottom">
+					<h2>And again it`s totally amazing</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem rem aspernatur dolores. Nemo nulla neque exercitationem quas in. Id, velit.</p>
 				</div>
-				<div class="slider">
-						<p>1/5</p>
-						<div class="slider-img">
-							<img src="img/Third/fa-chevron-left.svg" alt="">
-							<img src="img/Third/fa-chevron-right.svg" alt="">
-						</div>
+				<div class="cnt-date">
+					<p><span>27</span><br>feb</p>
 					</div>
-				<div class="item-container">
-					<div class="men-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-down copia.svg" alt=""></span>
-							<div class="color-option">
-								<button></button>
-								<button></button>
-								<button></button>
-							</div>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/First/Livello 2.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">T-SHIRT</p>
-							<p>5,00€</p>
-						</div>
-					</div>
-					<div class="men-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-down copia.svg" alt=""></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/Second/Livello 3.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">PANTS FORCLAZ</p>
-							<p>30,00€</p>
-						</div>
-					</div>
-					<div class="men-items">
-						<div class="item-highline">
-							<p>10LITRI</p>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/Third/Livello 4.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">BACKPACK</p>
-							<p>60,00€</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="women-block">
-				<div class="women-items-highline">
-					<span class="border"></span>
-					<span>WOMEN</span>
-				</div>
-				<div class="slider">
-						<p>1/5</p>
-						<div class="slider-img">
-							<img src="img/Third/fa-chevron-left.svg" alt="">
-							<img src="img/Third/fa-chevron-right.svg" alt="">
-						</div>
-					</div>
-				<div class="item-container">
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-down copia.svg" alt=""></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/First/Livello 5.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">GIACKET</p>
-							<p>60,00€</p>
-						</div>
-					</div>
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-down copia.svg" alt=""></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/Second/Livello 6.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">TREKKING SHOES</p>
-							<p>80,00€</p>
-						</div>
-					</div>
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-down copia.svg" alt=""></span>
-							<div class="color-option">
-								<button></button>
-								<button></button>
-							</div>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/Third/Livello 7.png" alt="">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">T-SHIRT</p>
-							<p>20,00€</p>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
-	</div>
+		<aside>
+			<div class="news-column">
+				<div class="img"><img src="assets/news1.jpg" alt="news1"></div>
+				<div class="news-text">
+					<h2>This is the first news on blog</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, totam.</p>
+				</div>
+			</div>
+			<div class="news-column">
+					<div class="img"><img src="assets/news2.jpg" alt="news1"></div>
+				<div class="news-text">
+					<h2>Second news on travel blog</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illum fuga exercitationem quidem quisquam neque?</p>
+				</div>
+			</div>
+    </aside>
+	</main>
 	<footer>
-		<div class="footer-topline">
-			<div class="wrapper">
-				<div class="footer-topline-text">
-					<fieldset>
-						<legend>ABOUT US</legend>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur cum fugit totam. Impedit doloremque modi architecto est aliquam delectus quasi, aliquid, corporis, possimus magni, aspernatur numquam nobis quaerat cum!</p>
-					</fieldset>
-				</div>
-			</div>
+			<div class="copyright">
+				<p>Copyright 2018, Epam systems<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, totam!</p>
 		</div>
-		<div class="footer-middleline">
-			<div class="wrapper">
-				<div class="twitter-line">
-					<a href="#"><img src="img/Footer/fa-twitter.png" alt="twitter"></a>
-					<p>" E-commerce psd theme avalible "</p>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottomline">
-			<div class="wrapper">
-				<div class="bottomline-container">
-					<div class="left-bottomline">
-						<h3>TREKKING</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minus consequuntur earum consequatur autem saepe natus quos similique, rerum provident. Natus laborum ea excepturi voluptate aspernatur? Iure expedita, similique alias blanditiis laudantium? Magni accusantium, vel!</p>
-					</div>
-					<div class="right-bottomline">
-						<ul>
-							<li><a href="#">CREDITS</a></li>
-							<li><a href="#">PRIVACY</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">CONTACT</a></li>
-						</ul>
-						<p>Design by gianluca cosetta</p>
-					</div>
-				</div>
-			</div>
+		<div class="coder">
+			<p>Coded<br>by Taras Sawchuk</p>
 		</div>
 	</footer>
+</div>
 </body>
 </html>
