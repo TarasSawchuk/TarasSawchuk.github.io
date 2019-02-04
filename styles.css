@@ -30,7 +30,7 @@ header {
   display: none;
 }
 .brend h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 100;
 }
 .brend h1 span {
@@ -38,29 +38,32 @@ header {
 }
 nav {
   display: flex;
-  padding: 0;
+  padding-right: 35px;
   margin: 0;
   background: inherit;
 }
 .nav-elm a{
   display: inline-block;
   align-items: center;
+  font-weight: 300;
   padding: 2em 1em;
-  color: #ffffff;
+  color: whitesmoke;
   text-decoration: none;
-  }
+}
 .nav-elm:hover {
   display: inline-block;
-  background: rgba(184,185,184,0.3);
+  background: rgba(180,180,180,0.1);
   color: #ffffff;
 }
-main, footer {
+main, 
+footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.content-box, aside {
+.content-box, 
+aside {
   display: flex;
   flex-direction: column;
 }
@@ -76,14 +79,17 @@ aside {
   padding: 0;
   width: 100%;
 }
-.cnt-img:hover, .cnt-text:hover, .cnt-text-bottom:hover {
+.cnt-img:hover, 
+.cnt-text:hover, 
+.cnt-text-bottom:hover {
   cursor: pointer;
-  filter: opacity(70%);
+  filter: opacity(55%);
 }
-.cnt-text, .cnt-date {
+.cnt-text, 
+.cnt-date {
   box-sizing: border-box;
   margin-bottom: 0px;
-  min-height:100%;
+  min-height: 100%;
 }
 .content-elm:nth-child(even) {
   flex-direction: row-reverse;
@@ -124,12 +130,14 @@ aside {
 .cnt-text-bottom {
   width: 90%;
 }
-.cnt-text p, .cnt-text-bottom p {
+.cnt-text p, 
+.cnt-text-bottom p {
   font-size: 14px;
   filter: opacity(60%);
   padding: 10px 30px 20px 30px;
 }
-.cnt-text h2, .cnt-text-bottom h2 {
+.cnt-text h2, 
+.cnt-text-bottom h2 {
   font-weight: 100;
   filter: none;
   font-size: 50px;
@@ -138,8 +146,9 @@ aside {
   margin: 40px 30px 0px 30px;
 }
 .cnt-date p {
+  margin-top: 10px;
   font-size: 27px;
-  filter: opacity(55%);
+  filter: opacity(30%);
   text-align: center;
 }
 .cnt-date p span {
@@ -149,7 +158,6 @@ aside {
   display: flex;
   flex-direction: column;
   color: #000000;
-  font-size: 14px;
   background: #ffffff;
   margin-bottom: 20px;
 }
@@ -158,8 +166,10 @@ aside {
 }
 .news-text p {
   margin: 0 20px 20px 20px;
-  filter: opacity(70%);
-  line-height: 1.5;
+  filter: opacity(85%);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
 }
 .news-text h2 {
   margin: 20px 20px 10px 20px;
@@ -174,7 +184,7 @@ footer {
   filter: opacity(60%);
 }
 @media screen and (max-width: 768px), screen and (max-width: 480px) {
-  .top-wrapper {
+.wrapper {
   width: 98%;
   margin: 0 1%;
 }
@@ -186,7 +196,6 @@ header {
 }
 .burger {
   display: inline;
-  width: 16px;
   margin: 20px 0px;
   filter: opacity(60%);
 }
@@ -207,14 +216,17 @@ nav {
 .content-elm {
     flex-direction: column;
   }
-.cnt-img, .cnt-text, .cnt-date {
+.cnt-img, 
+.cnt-text, 
+.cnt-date {
   width: 100%;
   box-sizing: border-box;
 }
 .news-text h2 {
   font-size: 34px;
 }
-.cnt-text h2, .cnt-text-bottom h2 {
+.cnt-text h2, 
+.cnt-text-bottom h2 {
   font-size: 46px;
 }
 .cnt-date {
@@ -229,7 +241,8 @@ footer {
   align-items: center;
   padding-bottom: 0;
 }
-.copyright, .coder {
+.copyright, 
+.coder {
   text-align: center;
 }
 }
@@ -244,13 +257,13 @@ aside {
 header {
   flex-direction: column;
 }
-.hamburger {
+.burger {
   display: inline;
-  width: 16px;
+  width: 18px;
   margin: 20px 0px;
   filter: opacity(60%);
 }
-.hamburger span {
+.burger span {
   display: block;
   width: 100%;
   height: 1px;
@@ -267,14 +280,17 @@ header {
 .content-elm {
     flex-direction: column;
   }
-.cnt-img, .cnt-text, .cnt-date {
+.cnt-img, 
+.cnt-text, 
+.cnt-date {
   width: 100%;
   box-sizing: border-box;
 }
 .news-text h2 {
   font-size: 24px;
 }
-.cnt-text h2, .cnt-text-bottom h2 {
+.cnt-text h2, 
+.cnt-text-bottom h2 {
   font-size: 36px;
 }
 .cnt-date p {
@@ -289,7 +305,8 @@ footer {
   align-items: center;
   padding-bottom: 0;
 }
-.copyright, .coder {
+.copyright, 
+.coder {
   text-align: center;
 }
 }
@@ -315,8 +332,16 @@ aside {
 }
 .news-text h2 {
   font-size: 20px;
+  font-weight: 300;
 }
-.cnt-text h2, .cnt-text-bottom h2 {
+.news-text p {
+  filter: opacity(85%);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.cnt-text h2, 
+.cnt-text-bottom h2 {
   font-size: 28px;
 }
 .cnt-date p {
