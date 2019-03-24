@@ -1,84 +1,221 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mainPage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TrekkingGear</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="">Main</a>
-            <a href="">Content</a>
-            <a href="form.html">Form</a>
-            <a href="">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <hr>
-        <section>
-            <h1>Текст</h1>
-            <article>
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p><i>Lorem ipsum dolor sit amet</i> <b>consectetur adipisicing elit.</b> 
-                    Nostrum iste inventore libero <mark>eos veritatis asperiores cum</mark> voluptate? 
-                    <small>Atque quidem eveniet delectus similique</small> non totam neque?
-                </p>
-            </article>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Voluptas eveniet sequi officia enim laboriosam quidem.
-            </p>
-        </section>
-        <hr>
-        <section>
-            <h2>Mercedes SEC</h2>
-            <figure>
-                <img src="img/secFirst.jpg" alt="Sec1"/>
-                <img src="img/secSecond.jpg" alt="Sec2"/>
-                <img src="img/secThird.jpg" alt="Sec3"/>
-                <figcaption>Mercedes c126 SEC</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h3>Габарити</h3>
-            <table>
-                <tr>
-                    <th>Довжина</th>
-                    <th>Ширина</th>
-                </tr>
-                <tr>
-                    <td>4935мм</td>
-                    <td>1828мм</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h4>Відео і аудіо</h4>
-            <video src="#" controls></video>
-            <audio src="#" controls></audio>
-        </section>
-        <section>
-            <h4>Списки</h4>
-            <p>Номерований</p>
-            <ol>
-                <li>Перший</li>
-                <li>Другий</li>
-                <li>Третій</li>
-                <li>Четвертий</li>
-                <li>Пятий</li>
-            </ol>
-            <p>Неномерований</p>
-            <ul>
-                <li>Перший</li>
-                <li>Другий</li>
-                <li>Третій</li>
-                <li>Четвертий</li>
-                <li>Пятий</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-    </footer>
+	<header>
+		<div class="wrapper">
+			<nav>
+				<div class="logo">
+					<a href="#">
+						<img src="img/Home/Navbar/Livello8.svg" alt="">
+					</a>
+				</div>
+				<ul class="nav-bar">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Products</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/Home/Navbar/fa-shopping-cart.svg" alt="">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-block">
+				<h1>Our clothing , your comfort</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere expedita numquam aperiam, illum ex dolorem consequuntur</p>
+			</div>
+			<div class="anchor">
+				<a href="index.html#config-block" onclick="slowScroll('#config-block')"><img src="img/Home/fa-chevron-down.svg" alt=""></a>
+			</div>
+		</div>
+	</header>
+	<div id="config-block">
+		<div class="wrapper">
+			<div class="btn-block">
+				<div class="checkbox">
+					<form>
+						<label class="container">Men
+  						<input type="checkbox" checked="checked">
+  						<span class="checkmark"></span>
+						</label>
+
+						<label class="container">Women
+  						<input type="checkbox">
+  						<span class="checkmark"></span>
+						</label>
+
+						<label class="container">Children
+  						<input type="checkbox">
+  						<span class="checkmark"></span>
+						</label>
+					</form>
+				</div>
+				<button>see all products</button>
+			</div>
+		</div>
+	</div>
+	<div class="items-block">
+		<div class="wrapper">
+			<div class="men-block">
+				<div class="men-items-highline">
+					<span>MEN</span>
+					<span class="border"></span>
+				</div>
+				<div class="slider">
+						<p>1/5</p>
+						<div class="slider-img">
+							<img src="img/Third/fa-chevron-left.svg" alt="">
+							<img src="img/Third/fa-chevron-right.svg" alt="">
+						</div>
+					</div>
+				<div class="item-container">
+					<div class="men-items">
+						<div class="item-highline">
+							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt=""></span>
+							<div class="color-option">
+								<button></button>
+								<button></button>
+								<button></button>
+							</div>
+						</div>
+						<div class="item-img">
+							<img src="img/Third/First/Livello2.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">T-SHIRT</p>
+							<p>5,00€</p>
+						</div>
+					</div>
+					<div class="men-items">
+						<div class="item-highline">
+							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt=""></span>
+						</div>
+						<div class="item-img">
+							<img src="img/Third/Second/Livello3.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">PANTS FORCLAZ</p>
+							<p>30,00€</p>
+						</div>
+					</div>
+					<div class="men-items">
+						<div class="item-highline">
+							<p>10LITRI</p>
+						</div>
+						<div class="item-img">
+							<img src="img/Third/Third/Livello4.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">BACKPACK</p>
+							<p>60,00€</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="women-block">
+				<div class="women-items-highline">
+					<span class="border"></span>
+					<span>WOMEN</span>
+				</div>
+				<div class="slider">
+						<p>1/5</p>
+						<div class="slider-img">
+							<img src="img/Third/fa-chevron-left.svg" alt="">
+							<img src="img/Third/fa-chevron-right.svg" alt="">
+						</div>
+					</div>
+				<div class="item-container">
+					<div class="women-items">
+						<div class="item-highline">
+							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt=""></span>
+						</div>
+						<div class="item-img">
+							<img src="img/Fourth/First/Livello5.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">GIACKET</p>
+							<p>60,00€</p>
+						</div>
+					</div>
+					<div class="women-items">
+						<div class="item-highline">
+							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt=""></span>
+						</div>
+						<div class="item-img">
+							<img src="img/Fourth/Second/Livello6.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">TREKKING SHOES</p>
+							<p>80,00€</p>
+						</div>
+					</div>
+					<div class="women-items">
+						<div class="item-highline">
+							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt=""></span>
+							<div class="color-option">
+								<button></button>
+								<button></button>
+							</div>
+						</div>
+						<div class="item-img">
+							<img src="img/Fourth/Third/Livello7.png" alt="">
+						</div>
+						<div class="item-bottomline">
+							<p class="item-name">T-SHIRT</p>
+							<p>20,00€</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer-topline">
+			<div class="wrapper">
+				<div class="footer-topline-text">
+					<fieldset>
+						<legend>ABOUT US</legend>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequuntur cum fugit totam. Impedit doloremque modi architecto est aliquam delectus quasi, aliquid, corporis, possimus magni, aspernatur numquam nobis quaerat cum!</p>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middleline">
+			<div class="wrapper">
+				<div class="twitter-line">
+					<a href="#"><img src="img/Footer/fa-twitter.png" alt="twitter"></a>
+					<p>" E-commerce psd theme avalible "</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottomline">
+			<div class="wrapper">
+				<div class="bottomline-container">
+					<div class="left-bottomline">
+						<h3>TREKKING</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minus consequuntur earum consequatur autem saepe natus quos similique, rerum provident. Natus laborum ea excepturi voluptate aspernatur? Iure expedita, similique alias blanditiis laudantium? Magni accusantium, vel!</p>
+					</div>
+					<div class="right-bottomline">
+						<ul>
+							<li><a href="#">CREDITS</a></li>
+							<li><a href="#">PRIVACY</a></li>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+						<p>Design by gianluca cosetta</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
