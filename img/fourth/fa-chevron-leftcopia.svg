@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" width="12" height="13">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #a99b77 } 
+	</style>
+	<path id="fa-chevron-left copia" class="shp0" d="M10.86,3.04c0.24,-0.19 0.24,-0.48 0,-0.67l-1.61,-1.24c-0.24,-0.19 -0.63,-0.19 -0.87,0l-7.2,5.53c-0.24,0.19 -0.24,0.48 0,0.67l7.2,5.53c0.24,0.19 0.63,0.19 0.87,0l1.61,-1.24c0.24,-0.19 0.24,-0.48 0,-0.67l-5.15,-3.95z" />
+</svg>
