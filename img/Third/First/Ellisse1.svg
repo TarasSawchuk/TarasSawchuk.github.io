@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: #155db9 } 
-	</style>
-	<path id="Ellisse 1" class="shp0" d="M0,10.5c0,5.8 4.92,10.5 11,10.5c6.08,0 11,-4.7 11,-10.5c0,-5.8 -4.92,-10.5 -11,-10.5c-6.08,0 -11,4.7 -11,10.5z" />
-</svg>
