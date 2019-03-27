@@ -1,0 +1,67 @@
+﻿@font-face {
+	font-family: "Quicksand";
+	src: url(fonts/Quicksand-Medium.ttf);
+}
+body {
+    max-width: 1240px;
+    margin: auto;
+    font-family: "Quicksand";
+    transition: all 0.5s;
+}
+header {
+    background-image: url(../TarasSawchuk.github.io/img/bg/livello1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin-top: 25px;
+}
+header nav .nav-bar {
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+header nav .nav-bar li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+header .header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+header .header-block p {
+    opacity: .8;
+    width: 300px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+@media screen and (max-width: 650px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header nav .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header nav .nav-bar li{
+        margin-top: 20px;
+    }
+}
