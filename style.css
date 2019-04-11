@@ -1,72 +1,214 @@
-﻿@font-face {
+/*
+Browser styles reset
+*/
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+/*
+General styles
+*/
+html {
+  scroll-behavior: smooth;
+}
+ body {
 	font-family: "Quicksand";
-	src: url(fonts/Quicksand-Medium.ttf);
-}
-body {
-    width: 100vw;
-    margin: auto;
-    font-family: "Quicksand";
-    transition: all 0.5s;
-}
-header {
-    background-image: url(../TarasSawchuk.github.io/img/bg/livello1.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
+} 
 .wrapper {
-    max-width: 1240px;
-    margin: auto;
+	margin-right: auto; 
+	margin-left:  auto; 
+	max-width: 1200px; 
+	padding-right: 20px;
+	padding-left:  20px;
 }
-header .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+/*
+Header styles
+*/
+header {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(img/header/livello1.png);
+	background-size: cover;
 }
-header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    margin-top: 25px;
+/*
+Navigation top line styles
+*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
 }
-header nav .nav-bar {
-    width: 25vw;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+.dropdown {
+	display: none;
 }
-header nav .nav-bar li a {
-    text-decoration: none;
-    color: whitesmoke;
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 260px;
+	margin: 0;
 }
-header .header-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: whitesmoke;
+.nav-bar li {
+	list-style-type: none;
 }
-header .header-block p {
-    opacity: .8;
-    width: 300px;
-    font-weight: 100;
-    font-size: 14px;
-    letter-spacing: 4px;
+.nav-bar li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(255,255,255);
+	font-family: "Quicksand";
+	font-weight: 450;
 }
-@media screen and (max-width: 650px) {
-    header nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    header nav .nav-bar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    header nav .nav-bar li{
-        margin-top: 20px;
-    }
+/*
+Header text styles
+*/
+.header-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 65vw;
+	height: 30vh;
+	position: absolute;
+	top: 40%;
+	left: 18%;
+}
+.header-block h1 {
+	display: inline-block;
+	font-size: 60px;
+	color: rgb(255,255,255);
+	font-family: "Quicksand";
+	font-weight: bold;
+}
+.header-block p {
+	padding-top: 10px;
+	font-size: 18px;
+	color: rgb(255,255,255);
+	font-family: "Quicksand";
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 5px;
+}
+/*
+Anchor styling section
+*/
+.anchor {
+	position: absolute;
+	left: 50%;
+	top: 90%;
+}
+/*
+Main section styling
+*/
+.border-block {
+	height: 30px;
+	background-color: rgb(170,155,119);
+}
+.container section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer {
+	width: 100vw;
+	height: 650px;
+}
+.footer-topline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(170, 155, 119);
+	width: 100vw;
+	height: 500px;
+	text-align: center;
+}
+/*
+autor anchor styling
+*/
+.footer-middleline {
+	background-color: rgb(83, 82, 83);
+	width: 100vw;
+	height: 70px;
+}
+.autor-line {
+	height: 70px;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+/*
+Footer styling with right side navigation
+*/
+.footer-bottomline {
+	display: flex;
+	background-color: rgb(66, 66, 66);
+	width: 100vw;
+	height: 250px;
+}
+.bottomline-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.bottomline-container .left-bottomline {
+	padding-top: 10px;
+	color: rgb(255,255,255);
+	text-shadow: grey 0 0 2px;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+/*
+Hover effects
+*/
+.logo a img:hover {
+	-webkit-transform: scale(1.4);
+  	-ms-transform: scale(1.4);
+  	transform: scale(1.4);
+}
+header nav li:hover {
+	-webkit-transform: scale(1.4);
+  	-ms-transform: scale(1.4);
+  	transform: scale(1.4);
+}
+header .anchor:hover {
+	margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+	.header-block h1 {
+		margin-top: 30px;
+		font-size: 40px;
+	}
+	.header-block p {
+		margin: 0;
+		padding: 0; 
+	}
+	.nav-bar{
+		display: none;
+	}
+	.dropdown {
+		display: inline;
+	}
+	.dropdown .dropdown-menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.dropdown .dropdown-menu a{
+		padding-top: 5px;
+		font-size: 22px;
+	}
+	.footer-topline {
+		height: 750px;
+	}
+	.footer-middleline {
+		height: 60px;
+	}
+	.footer-bottomline {
+		height: 350px;
+	}
 }

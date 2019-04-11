@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TrekkingGear</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,187 +14,116 @@
 			<nav>
 				<div class="logo">
 					<a href="#">
-						<img src="img/home/navbar/livello8.svg" alt="logo">
+						<img src="img/header/logo.svg" alt="logo">
 					</a>
 				</div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Navigation
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#">Cart</a>
+                  </div>
+                </div>
 				<ul class="nav-bar">
 					<li>
-						<a href="#">Home</a>
+						<a href="#products">Products</a>
 					</li>
 					<li>
-						<a href="#">Products</a>
+						<a href="#contact">Contact Us</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="img/home/navbar/fa-shopping-cart.svg" alt="shoping-card">
+							<img src="img/header/shopping-cart.svg" alt="shoping-card">
 						</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="header-block">
 				<h1>Our clothing , your comfort</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat ducimus nostrum iusto?</p>
+				<p>Best travel gear<br>For best adventures</p>
 			</div>
 			<div class="anchor">
-				<a href="index.html#config-block" onclick="slowScroll('#config-block')"><img src="img/home/fa-chevron-down.svg" alt="scroll"></a>
+				<a href="#products"><img src="img/header/fa-chevron-down.svg" alt="scroll-down"></a>
 			</div>
 		</div>
 	</header>
-	<!-- <div id="config-block">
-		<div class="wrapper">
-			<div class="btn-block">
-				<div class="checkbox">
-					<form>
-						<label class="container">Men
-							<input type="checkbox" checked="checked">
-							<span class="checkmark"></span>
-						</label>
-
-						<label class="container">Women
-							<input type="checkbox">
-							<span class="checkmark"></span>
-						</label>
-
-						<label class="container">Children
-							<input type="checkbox">
-							<span class="checkmark"></span>
-						</label>
-					</form>
-				</div>
-				<button>see all products</button>
-			</div>
-		</div>
-	</div>
-	<div class="items-block">
-		<div class="wrapper">
-			<div class="men-block">
-				<div class="men-items-highline">
-					<span>MEN</span>
-					<span class="border"></span>
-				</div>
-				<div class="slider">
-						<p>1/5</p>
-						<div class="slider-img">
-							<img src="img/Third/fa-chevron-left.svg" alt="left-scroll">
-							<img src="img/Third/fa-chevron-right.svg" alt="right-scroll">
-						</div>
-					</div>
-				<div class="item-container">
-					<div class="men-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt="down"></span>
-							<div class="color-option">
-								<button></button>
-								<button></button>
-								<button></button>
-							</div>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/First/Livello2.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">T-SHIRT</p>
-							<p>5,00€</p>
-						</div>
-					</div>
-					<div class="men-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt="size"></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/Second/Livello3.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">PANTS FORCLAZ</p>
-							<p>30,00€</p>
-						</div>
-					</div>
-					<div class="men-items">
-						<div class="item-highline">
-							<p>10LITRI</p>
-						</div>
-						<div class="item-img">
-							<img src="img/Third/Third/Livello4.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">BACKPACK</p>
-							<p>60,00€</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="women-block">
-				<div class="women-items-highline">
-					<span class="border"></span>
-					<span>WOMEN</span>
-				</div>
-				<div class="slider">
-						<p>1/5</p>
-						<div class="slider-img">
-							<img src="img/Third/fa-chevron-left.svg" alt="left">
-							<img src="img/Third/fa-chevron-right.svg" alt="right">
-						</div>
-					</div>
-				<div class="item-container">
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt="down"></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/First/Livello5.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">GIACKET</p>
-							<p>60,00€</p>
-						</div>
-					</div>
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt="item-photo"></span>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/Second/Livello6.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">TREKKING SHOES</p>
-							<p>80,00€</p>
-						</div>
-					</div>
-					<div class="women-items">
-						<div class="item-highline">
-							<span>SIZE<img src="img/Third/First/fa-angle-downcopia.svg" alt="item-photo"></span>
-							<div class="color-option">
-								<button></button>
-								<button></button>
-							</div>
-						</div>
-						<div class="item-img">
-							<img src="img/Fourth/Third/Livello7.png" alt="item-photo">
-						</div>
-						<div class="item-bottomline">
-							<p class="item-name">T-SHIRT</p>
-							<p>20,00€</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="border-block"></div>
+	<main class="container">
+	    <div class="wrapper">
+    		<section>
+                <h2 id="products">Some of our products</h2>
+                <div class="row products-container"></div>
+            </section>
+        </div>
+	</main>
 	<footer>
 		<div class="footer-topline">
 			<div class="wrapper">
-				<div class="footer-topline-form">
-					<form action="POST">
-
-					</form>
-				</div>
+			    <h3 id="contact">Contact Us</h3>
+        		<form id="contact-form" action="https://formspree.io/taras338lm@gmail.com" method="POST">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Please specify your need *</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value="">Choose</option>
+                                        <option value="Request quotation">Request quotation</option>
+                                        <option value="Request order status">Request order status</option>
+                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                    </div>
+                </form>
 			</div>
 		</div>
 		<div class="footer-middleline">
 			<div class="wrapper">
-				<div class="twitter-line">
-					<a href="#"><img src="img/Footer/fa-twitter.png" alt="twitter"></a>
-					<p>" E-commerce psd theme avalible "</p>
+				<div class="autor-line">
+					<h6>Coded by <strong>Taras Sawchuk</strong></h6>
 				</div>
 			</div>
 		</div>
@@ -200,21 +131,57 @@
 			<div class="wrapper">
 				<div class="bottomline-container">
 					<div class="left-bottomline">
-						<h3>TREKKING</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minus consequuntur earum consequatur autem saepe natus quos similique, rerum provident. Natus laborum ea excepturi voluptate aspernatur? Iure expedita, similique alias blanditiis laudantium? Magni accusantium, vel!</p>
-					</div>
-					<div class="right-bottomline">
-						<ul>
-							<li><a href="#">CREDITS</a></li>
-							<li><a href="#">PRIVACY</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">CONTACT</a></li>
-						</ul>
-						<p>Design by gianluca cosetta</p>
+						<h3>What is TREKKING?</h3>
+						<span>Trekking is an outdoor recreational activity of hiking or walking for more than a day. 
+						It can be a short or an extended journey, and may or may not involve camping outdoors. 
+						In Nepal, trekking is the most widespread activity for tourists, obviously due to its previlege of being home to the Himalayas. 
+						There are many different ways to do a trek and the trekking culture often varies from country to country.
+						</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	
+    <script defer src="js/cart.js"></script>
+    <script defer src="js/product-list.js"></script>    
+    <script defer src="js/index.js"></script>
 </body>
-</html> -->
+</html>

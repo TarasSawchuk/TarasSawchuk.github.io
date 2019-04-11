@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "Osprey Daylite Plus Daypack",
+        "image": "first-item.jpg",
+        "description": "Best backpack for 3-day.",
+        "price": 120.00
+    },
+    {
+        "id": "2",
+        "title": "Solid Gear Hiker Occupational Boots",
+        "image": "second-item.jpg",
+        "description": "Highly comfortable trekking boot.",
+        "price": 139.99
+    },
+    {
+        "id": "3",
+        "title": "Foxelli HOG1 Carbon Fibre",
+        "image": "third-item.jpg",
+        "description": "Hight durability and longevity of the pole.",
+        "price": 130.00
+    },
+    {
+        "id": "4",
+        "title": "Esbit 5-Piece Trekking Cook Set",
+        "image": "fourth-item.jpg",
+        "description": "Lightweight, hard anodized aluminum construction",
+        "price": 129.99
+    },
+    {
+        "id": "5",
+        "title": "TECH Shoecovers",
+        "image": "fifth-item.jpg",
+        "description": "Super high fiber leather material is stronger and more breathable than leather.",
+        "price": 10.99
+    },
+    {
+        "id": "6",
+        "title": "Hexpeak tent",
+        "image": "sixth-item.jpg",
+        "description": "The Hexpeak XL is a hexagon shaped teepee tent system for backpacking.",
+        "price": 429.99
+    },
+    {
+        "id": "7",
+        "title": "Petzl Ascender",
+        "image": "seventh-item.jpg",
+        "description": "Handled rope clamp for rope ascents.",
+        "price": 77.99
+    },
+    {
+        "id": "8",
+        "title": "Patagonia Jacket",
+        "image": "eighth-item.jpg",
+        "description": "The perfect warmth for just about everything.",
+        "price": 119.99
+    }
+]
