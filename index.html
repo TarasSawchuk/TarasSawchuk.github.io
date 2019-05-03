@@ -17,16 +17,16 @@
 						<img src="img/header/logo.svg" alt="logo">
 					</a>
 				</div>
-                <div class="dropdown">
-                  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Navigation
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a href="#products">Products</a>
-                    <a href="#contact">Contact Us</a>
-                    <a href="#">Cart</a>
-                  </div>
-                </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#">Cart</a>
+          </div>
+        </div>
 				<ul class="nav-bar">
 					<li>
 						<a href="#products">Products</a>
@@ -44,80 +44,81 @@
 			<div class="header-block">
 				<h1>Our clothing , your comfort</h1>
 				<p>Best travel gear<br>For best adventures</p>
-			</div>
+      </div>
 			<div class="anchor">
-				<a href="#products"><img src="img/header/fa-chevron-down.svg" alt="scroll-down"></a>
-			</div>
+        <a href="#products"><img src="img/header/fa-chevron-down.svg" alt="scroll down image"></a>
+      </div>
+      <a href="#" id="up-button"><img src="img/header/fa-chevron-up.svg" alt="scroll up image"></a>
 		</div>
 	</header>
 	<div class="border-block"></div>
 	<main class="container">
 	    <div class="wrapper">
-    		<section>
-                <h2 id="products">Some of our products</h2>
-                <div class="row products-container"></div>
-            </section>
-        </div>
+          <section>
+              <h2 id="products">Some of our products</h2>
+              <div class="row products-container"></div>
+          </section>
+      </div>
 	</main>
 	<footer>
 		<div class="footer-topline">
 			<div class="wrapper">
-			    <h3 id="contact">Contact Us</h3>
-        		<form id="contact-form" action="https://formspree.io/taras338lm@gmail.com" method="POST">
-                    <div class="messages"></div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_name">Firstname *</label>
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_lastname">Lastname *</label>
-                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_email">Email *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="form_need">Please specify your need *</label>
-                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                        <option value="">Choose</option>
-                                        <option value="Request quotation">Request quotation</option>
-                                        <option value="Request order status">Request order status</option>
-                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="form_message">Message *</label>
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="submit" class="btn btn-success btn-send" value="Send message">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+			  <h3 id="contact">Contact Us</h3>
+        	<form id="contact-form" action="https://formspree.io/taras338lm@gmail.com" method="POST">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname">Lastname *</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_need">Please specify your need *</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="">Choose</option>
+                              <option value="Request quotation">Request quotation</option>
+                              <option value="Request order status">Request order status</option>
+                              <option value="Request copy of an invoice">Request copy of an invoice</option>
+                              <option value="Other">Other</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+              </div>
+            </div>
+        </form>
 			</div>
 		</div>
 		<div class="footer-middleline">
@@ -184,5 +185,6 @@
   <script defer src="js/product-list.js"></script>    
   <script defer src="js/index.js"></script>
   <script defer src="js/smooth-scroll.js"></script>
+  <script defer src="js/up-button.js"></script>
 </body>
 </html>

@@ -95,15 +95,21 @@ Anchor styling section
 */
 .anchor {
 	position: absolute;
-	left: 50%;
+	left: 48.5%;
 	top: 90%;
+}
+#up-button {
+	position: fixed;
+	right: 80px;
+	bottom: 35px;
+	width: 38px;
 }
 /*
 Main section styling
 */
 .border-block {
 	height: 30px;
-	background-color: rgb(170,155,119);
+	background-color: rgba(170,155,119, .5);
 }
 .container section {
 	display: flex;
@@ -178,6 +184,9 @@ header nav li:hover {
 header .anchor:hover {
 	margin-top: 15px;
 }
+#up-button:hover {
+	margin-bottom: 15px;
+}
 @media screen and (max-width: 768px) {
 	.header-block h1 {
 		margin-top: 30px;
@@ -201,6 +210,10 @@ header .anchor:hover {
 	.dropdown .dropdown-menu a{
 		padding-top: 5px;
 		font-size: 22px;
+	}
+	#up-button{
+		right: 30px;
+		bottom: 20px;
 	}
 	.footer-topline {
 		height: 750px;

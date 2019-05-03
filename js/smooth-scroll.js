@@ -1,5 +1,4 @@
-$(document).ready(function(){
-  $("a").on('click', function(event) {
+$("a").on('click', function(event) {
 
     if (this.hash !== "") {
 
@@ -13,5 +12,4 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     }
-  });
 });
