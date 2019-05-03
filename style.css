@@ -103,6 +103,8 @@ Anchor styling section
 	right: 80px;
 	bottom: 35px;
 	width: 38px;
+	z-index: 1;
+	opacity: .8;
 }
 /*
 Main section styling
