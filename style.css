@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -17,7 +20,6 @@ body {
 header {
     width: 100vw;
     height: 99vh;
-    max-width: 1200px;
     background-image: url(src/img/images/header/illustrationBlock1.png);
     background-repeat: no-repeat;
     background-position: right bottom;
