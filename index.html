@@ -1,190 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TrekkingGear</title>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Active Signatures</title>
 </head>
 <body>
-	<header>
-		<div class="wrapper">
-			<nav>
-				<div class="logo">
-					<a href="#">
-						<img src="img/header/logo.svg" alt="logo">
-					</a>
-				</div>
-        <div class="dropdown">
-          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Navigation
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a href="#products">Products</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#">Cart</a>
-          </div>
-        </div>
-				<ul class="nav-bar">
-					<li>
-						<a href="#products">Products</a>
-					</li>
-					<li>
-						<a href="#contact">Contact Us</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/header/shopping-cart.svg" alt="shoping-card">
-						</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header-block">
-				<h1>Our clothing , your comfort</h1>
-				<p>Best travel gear<br>For best adventures</p>
-      </div>
-			<div class="anchor">
-        <a href="#products"><img src="img/header/fa-chevron-down.svg" alt="scroll down image"></a>
-      </div>
-      <a href="#" id="up-button"><img src="img/header/fa-chevron-up.svg" alt="scroll up image"></a>
-		</div>
-	</header>
-	<div class="border-block"></div>
-	<main class="container">
-	    <div class="wrapper">
-          <section>
-              <h2 id="products">Some of our products</h2>
-              <div class="row products-container"></div>
-          </section>
-      </div>
-	</main>
-	<footer>
-		<div class="footer-topline">
-			<div class="wrapper">
-			  <h3 id="contact">Contact Us</h3>
-        	<form id="contact-form" action="https://formspree.io/taras338lm@gmail.com" method="POST">
-            <div class="messages"></div>
-            <div class="controls">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_name">Firstname *</label>
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_lastname">Lastname *</label>
-                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_email">Email *</label>
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_need">Please specify your need *</label>
-                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                              <option value="">Choose</option>
-                              <option value="Request quotation">Request quotation</option>
-                              <option value="Request order status">Request order status</option>
-                              <option value="Request copy of an invoice">Request copy of an invoice</option>
-                              <option value="Other">Other</option>
-                          </select>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                      <label for="form_message">Message *</label>
-                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                      <div class="help-block with-errors"></div>
-                  </div>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="left-nav">
+                    <li>
+                        <img src="src/img/images/header/logo AC.png" alt="logoAC">
+                    </li>
+                    <li>
+                        <a href="#">support</a>
+                    </li>
+                    <li>
+                        <a href="#">pracing</a>
+                    </li>
                 </div>
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                <div class="right-nav">
+                    <li>
+                        <button class="header-crt-sign">create a signature</button>
+                    </li>
+                    <li>
+                        <button>sign up <img src="src/img/images/header/user icon.png" alt="user icon"></button>
+                    </li>
+                    <li>
+                        <button>login <img src="src/img/images/header/login icon.png" alt="login icon"></button>
+                    </li>
                 </div>
-              </div>
+            </nav>
+            <div class="header-content">
+                <h1>Promote your company with every email</h1>
+                <p>Use our platform to create amazing emails signatures for your team promote your company with every email sent.</p>
+                <button>create a signature</button>
             </div>
-        </form>
-			</div>
-		</div>
-		<div class="footer-middleline">
-			<div class="wrapper">
-				<div class="autor-line">
-					<h6>Coded by <strong>Taras Sawchuk</strong></h6>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottomline">
-			<div class="wrapper">
-				<div class="bottomline-container">
-					<div class="left-bottomline">
-						<h3>What is TREKKING?</h3>
-						<span>Trekking is an outdoor recreational activity of hiking or walking for more than a day. 
-						It can be a short or an extended journey, and may or may not involve camping outdoors. 
-						In Nepal, trekking is the most widespread activity for tourists, obviously due to its previlege of being home to the Himalayas. 
-						There are many different ways to do a trek and the trekking culture often varies from country to country.
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="cartLabel">Cart</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="cart-product-list-container"></div>
-            <hr>
-            <div class="container">
-              <form>
-                <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
-                  <input class="form-control col-8" type="text" id="client-name" required>
-                </div>
-                <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
-                  <input class="form-control col-8" type="email" id="client-email" required>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary order">Order</button>
-          </div>
         </div>
-      </div>
-    </div>
-    
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-	
-  <script defer src="js/cart.js"></script>
-  <script defer src="js/product-list.js"></script>    
-  <script defer src="js/index.js"></script>
-  <script defer src="js/smooth-scroll.js"></script>
-  <script defer src="js/up-button.js"></script>
+    </header>
 </body>
 </html>
