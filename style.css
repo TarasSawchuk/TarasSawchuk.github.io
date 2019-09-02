@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-html {
-  overflow-x: hidden;
-}
 body {
     margin: 0px;
     padding: 0px;
@@ -12,10 +9,10 @@ body {
 }
 .wrapper {
     margin-right: auto; 
-	margin-left:  auto; 
+	margin-left:  auto;
 	max-width: 1200px; 
 	padding-right: 20px;
-	padding-left:  20px;
+    padding-left: 20px;
 }
 header {
     width: 100vw;
@@ -88,7 +85,7 @@ h1 {
     font-size: 36px;
     font-weight: bolder;
 }
-.header-content p {
+p {
     line-height: 30px;
     font-weight: 800;
     opacity: .6;
@@ -104,3 +101,83 @@ h1 {
     font-weight: 650;
     text-align: center;
 }
+/* Main (body) section coding */
+.first-body-container, .second-body-container, .third-body-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.h2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+.h2-container h2, .h2-container p{
+    text-align: center;
+}
+.features-container-row1, .features-container-row2 {
+    display: flex;
+    margin-top: 50px;
+}
+.signatures-buttons {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Button styling */
+.first-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: 300px;
+    background-color: #fff;
+    border: whitesmoke 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0,0,0,.1);
+}
+.btn-header {
+    text-align: center;
+}
+.btn-header h4 {
+    text-transform: uppercase;
+}
+.btn-header p {
+    opacity: .6;
+    font-size: 14px;
+}
+.btn-body {
+    display: flex;
+    align-items: center;
+}
+.btn-body .dollar-smb {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.btn-body .price{
+    font-size: 60px;
+    color: #3bae75;
+    opacity: 1;
+}
+.btn-body .month {
+    margin-top: 50px;
+}
+.btn-footer button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #3bae75;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
