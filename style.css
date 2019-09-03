@@ -1,18 +1,18 @@
 * {
     box-sizing: border-box;
+    
 }
 body {
     margin: 0px;
     padding: 0px;
     font-family: "Quicksand";
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 .wrapper {
     margin-right: auto; 
 	margin-left:  auto;
-	max-width: 1200px; 
-	padding-right: 20px;
-    padding-left: 20px;
+	max-width: 1200px;
 }
 header {
     width: 100vw;
@@ -102,12 +102,17 @@ p {
     text-align: center;
 }
 /* Main (body) section coding */
-.first-body-container, .second-body-container, .third-body-container {
+.first-body-container, .second-body-container, .third-body-container, .fourth-body-container {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.first-body-container {
+    background-image: url(src/img/images/block2/illustrationblock2.png);
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 .h2-container {
     display: flex;
@@ -121,15 +126,20 @@ p {
 .features-container-row1, .features-container-row2 {
     display: flex;
     margin-top: 50px;
+    width: 65vw;
+}
+.companies-list img {
+    width: 68vw;
 }
 .signatures-buttons {
     width: 80vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url(src/img/images/block4/pricingbackround\ lineblock4.png);
 }
 /* Button styling */
-.first-button {
+.sign-button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
