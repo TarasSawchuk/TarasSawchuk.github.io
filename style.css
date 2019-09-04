@@ -23,6 +23,9 @@ header {
     background-repeat: no-repeat;
     background-position: right bottom;
 }
+.menu-button-space input {
+    display: none;
+}
 header nav {
     display: flex;
     justify-content: space-between;
@@ -292,28 +295,53 @@ footer .wrapper{
 .right-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 20vw;
+    justify-content: space-around;
+    width: 17vw;
 }
 .right-footer a img {
     width: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Breackpoint coding */
+@media screen and (max-width: 865px) {
+    header .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    nav .left-nav, nav .right-nav {
+        flex-direction: column;
+    }
+    .header-content {
+        align-items: center;
+        margin-top: 15vh;
+        width: 50vw;
+    }
+    .header-content h1, .header-content p{
+        text-align: center;
+    }
+    .signatures-buttons {
+        flex-direction: column;
+    }
+    .sign-button {
+        margin-top: 50px;
+    }
+    .team-cards {
+        flex-direction: column;
+    }
+    .teammate-card {
+        margin-top: 50px;
+    }
+    footer .wrapper {
+        width: 80vw;
+    }
+    .left-footer, .right-footer {
+        flex-direction: column;
+    }
+}
 /* Focus and hover effects */
 .left-nav a:hover, .right-nav li:hover {
     border-bottom: #3bae75 2px solid;
