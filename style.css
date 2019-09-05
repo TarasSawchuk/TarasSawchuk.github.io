@@ -23,7 +23,15 @@ header {
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-.menu-button-space input {
+.menu-trigger {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 34px;
+    color: #3bae75;
+    font-weight: 900;
+    cursor: pointer;
     display: none;
 }
 header nav {
@@ -308,16 +316,34 @@ footer .wrapper{
         flex-direction: column;
         align-items: center;
     }
-    nav {
+    .menu-trigger {
+        display: block;
+    }
+    .wrapper nav {
+        margin-top: 0px;
         flex-direction: column;
-        overflow: hidden;
     }
     nav .left-nav, nav .right-nav {
         flex-direction: column;
+        align-items: center;
+        background-color: grey;
+        width: 200px;
+        height: 100px;
+    }
+    nav .left-nav {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 50px;
+    }
+    nav .right-nav {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 20px;
+    }
+    nav .left-nav li, nav .right-nav li, .header-crt-sign {
+        margin-top: 10px;
     }
     .header-content {
         align-items: center;
-        margin-top: 15vh;
+        margin-top: 5px;
         width: 50vw;
     }
     .header-content h1, .header-content p{
@@ -343,8 +369,8 @@ footer .wrapper{
     }
 }
 /* Focus and hover effects */
-.left-nav a:hover, .right-nav li:hover {
-    border-bottom: #3bae75 2px solid;
+.left-nav li:hover, .right-nav li:hover {
+    transform: rotate(8deg);
     cursor: pointer;
 }
 .header-crt-sign:hover, .header-content button:hover {
