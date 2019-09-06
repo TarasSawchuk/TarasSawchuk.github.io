@@ -293,7 +293,7 @@ footer .wrapper{
     align-items: center;
 }
 .left-footer {
-    width: 35vw;
+    width: 30vw;
     justify-content: space-between;
 }
 .left-footer a, .left-footer p{
@@ -303,8 +303,6 @@ footer .wrapper{
 .right-footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 17vw;
 }
 .right-footer a img {
     width: 30px;
@@ -355,6 +353,9 @@ footer .wrapper{
     .sign-button {
         margin-top: 50px;
     }
+    .tab-index-container li{
+        margin-top: 20px;
+    }
     .team-cards {
         flex-direction: column;
     }
@@ -366,6 +367,9 @@ footer .wrapper{
     }
     .left-footer, .right-footer {
         flex-direction: column;
+    }
+    .left-footer p, .right-footer p{
+        margin-top: 0px;
     }
 }
 /* Focus and hover effects */
