@@ -1,251 +1,190 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Active Signatures</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TrekkingGear</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <label class="menu-trigger">Menu</label>
-            <nav>
-                <div class="left-nav">
-                    <li>
-                        <img src="src/img/images/header/logo AC.png" alt="logoAC">
-                    </li>
-                    <li>
-                        <a href="#">support</a>
-                    </li>
-                    <li>
-                        <a href="#">pracing</a>
-                    </li>
-                </div>
-                <div class="right-nav">
-                    <button class="header-crt-sign">create a signature</button>
-                    <li>
-                        <button>sign up <img src="src/img/images/header/user icon.png" alt="user icon"></button>
-                    </li>
-                    <li>
-                        <button>login <img src="src/img/images/header/login icon.png" alt="login icon"></button>
-                    </li>
-                </div>
-            </nav>
-            <div class="header-content">
-                <h1>Promote your company with every email</h1>
-                <p>Use our platform to create amazing emails signatures for your team promote your company with every email sent.</p>
-                <button>create a signature</button>
-            </div>
+	<header>
+		<div class="wrapper">
+			<nav>
+				<div class="logo">
+					<a href="#">
+						<img src="img/header/logo.svg" alt="logo">
+					</a>
+				</div>
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Navigation
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#">Cart</a>
+          </div>
         </div>
-    </header>
-    <main>
-        <div class="wrapper">
-            <div class="first-body-container">
-                <div class="h2-container">
-                    <img src="src/img/images/block2/illustration above heading block 2.png" alt="illustration above heading block">
-                    <h2>Why use email signature creator</h2>
-                    <p>It is not easy to create a valuable email signature without any programming knowladge and all by yourself.</p>
+				<ul class="nav-bar">
+					<li>
+						<a href="#products">Products</a>
+					</li>
+					<li>
+						<a href="#contact">Contact Us</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/header/shopping-cart.svg" alt="shoping-card">
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-block">
+				<h1>Our clothing , your comfort</h1>
+				<p>Best travel gear<br>For best adventures</p>
+      </div>
+			<div class="anchor">
+        <a href="#products"><img src="img/header/fa-chevron-down.svg" alt="scroll down image"></a>
+      </div>
+      <a href="#" id="up-button"><img src="img/header/fa-chevron-up.svg" alt="scroll up image"></a>
+		</div>
+	</header>
+	<div class="border-block"></div>
+	<main class="container">
+	    <div class="wrapper">
+          <section>
+              <h2 id="products">Some of our products</h2>
+              <div class="row products-container"></div>
+          </section>
+      </div>
+	</main>
+	<footer>
+		<div class="footer-topline">
+			<div class="wrapper">
+			  <h3 id="contact">Contact Us</h3>
+        	<form id="contact-form" action="https://formspree.io/taras338lm@gmail.com" method="POST">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname">Lastname *</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_need">Please specify your need *</label>
+                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="">Choose</option>
+                              <option value="Request quotation">Request quotation</option>
+                              <option value="Request order status">Request order status</option>
+                              <option value="Request copy of an invoice">Request copy of an invoice</option>
+                              <option value="Other">Other</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
                 </div>
-                <div class="features-container-row1">
-                    <div class="feature">
-                        <img src="src/img/images/block2/group icon.png" alt="group icon">
-                        <h5>Social media icons</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
-                    <div class="feature">
-                            <img src="src/img/images/block2/clock icon.png" alt="clock icon">
-                            <h5>It will take up to 5 minutes</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
-                    <div class="feature">
-                            <img src="src/img/images/block2/template icon.png" alt="template icon">
-                            <h5>Templates created by designers</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
                 </div>
-                <div class="features-container-row2">
-                    <div class="feature">
-                            <img src="src/img/images/block2/baner icon.png" alt="baner icon">
-                            <h5>Add an ad banner to your email</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
-                    <div class="feature">
-                            <img src="src/img/images/block2/coding icon.png" alt="coding icon">
-                            <h5>HTML email signature is mobile</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
-                    <div class="feature">
-                            <img src="src/img/images/block2/switch icon.png" alt="switch icon">
-                            <h5>Create and controll all signatures</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, delectus.</p>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="second-body-container">
-                <div class="h2-container">
-                    <img src="src/img/images/block3/illustration above text block 3.png" alt="illustration above text">
-                    <h2>You`re in a great company</h2>
-                    <p>Some of the best teams alredy create their own original electronic signatures. Join them to become part of the same team.</p>
+        </form>
+			</div>
+		</div>
+		<div class="footer-middleline">
+			<div class="wrapper">
+				<div class="autor-line">
+					<h6>Coded by <strong>Taras Sawchuk</strong></h6>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottomline">
+			<div class="wrapper">
+				<div class="bottomline-container">
+					<div class="left-bottomline">
+						<h3>What is TREKKING?</h3>
+						<span>Trekking is an outdoor recreational activity of hiking or walking for more than a day. 
+						It can be a short or an extended journey, and may or may not involve camping outdoors. 
+						In Nepal, trekking is the most widespread activity for tourists, obviously due to its previlege of being home to the Himalayas. 
+						There are many different ways to do a trek and the trekking culture often varies from country to country.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
                 </div>
-                <div class="companies-list">
-                    <img src="src/img/images/block3/companies.png" alt="companies list">
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
                 </div>
+              </form>
             </div>
-            <div class="third-body-container">
-                <div class="h2-container">
-                    <img src="src/img/images/block4/illustration above text block 4.png" alt="illustration above text block">
-                    <h2>Choose your plan</h2>
-                    <p>Choose any plan that is convenient for you to have access to a full set of tools and topic selection</p>
-                </div>
-                <div class="signatures-buttons">
-                    <div class="sign-button">
-                        <div class="btn-header">
-                            <h4>1 signatures</h4>
-                            <p>Best for 1 user</p>
-                        </div>
-                        <div class="btn-body">
-                            <p class="dollar-smb">$</p>
-                            <p class="price">24</p>
-                            <p class="month">/mo</p>
-                        </div>
-                        <div class="btn-footer">
-                            <button>try it now</button>
-                        </div>
-                    </div>
-                    <div class="sign-button">
-                        <div class="btn-header">
-                            <h4>3 signatures</h4>
-                            <p>Best for 1-3 users</p>
-                        </div>
-                        <div class="btn-body">
-                            <p class="dollar-smb">$</p>
-                            <p class="price">49</p>
-                            <p class="month">/mo</p>
-                        </div>
-                        <div class="btn-footer">
-                            <button>try it now</button>
-                        </div>
-                    </div>
-                    <div class="sign-button">
-                        <div class="btn-header">
-                            <h4>5 signatures</h4>
-                            <p>Best for 3-5 users</p>
-                        </div>
-                        <div class="btn-body">
-                            <p class="dollar-smb">$</p>
-                            <p class="price">69</p>
-                            <p class="month">/mo</p>
-                        </div>
-                        <div class="btn-footer">
-                            <button>try it now</button>
-                        </div>
-                    </div>
-                    <div class="sign-button">
-                        <div class="btn-header">
-                            <h4>10 signatures</h4>
-                            <p>Best for 5-10 users</p>
-                        </div>
-                        <div class="btn-body">
-                            <p class="dollar-smb">$</p>
-                            <p class="price">99</p>
-                            <p class="month">/mo</p>
-                        </div>
-                        <div class="btn-footer">
-                            <button>try it now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fourth-body-container">
-                <div class="h2-container">
-                    <img src="src/img/images/block5/illustration above text block 5.png" alt="illustration above text block">
-                    <h2>Corporate email signature generator</h2>
-                    <p>is the most compelling and straightforward solution for signature marketing</p>
-                </div>
-                <div class="tab-index-container">
-                    <ul>
-                        <li><a href="#" tabindex="1">Generate and modify your email signature without it departament</a></li>
-                        <li><a href="#" tabindex="2">Forget about additional software</a></li>
-                        <li><a href="#" tabindex="3">Simple electronic signature generator</a></li>
-                        <li><a href="#" tabindex="4">Compatible with majority email clients</a></li>
-                    </ul>
-                    <div class="tab-index-content">
-                        <img src="src/img/images/block5/illustration on a card block 5.png" alt="illustration on a card block">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, ullam consequatur fuga dicta quod beatae hic voluptate nostrum eum minima sapiente fugit quam quia exercitationem?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="fifth-body-container">
-                <div class="h2-container">
-                    <img src="src/img/images/block6/illustration above text block 6.png" alt="illustration above text">
-                    <h2>Over 800,000 professional email signatures for businesses have been created so far</h2>
-                </div>
-                <div class="team-cards">
-                    <div class="teammate-card-container">
-                        <img src="src/img/images/block6/blue illustration block 6.png" alt="blue illustration">
-                        <div class="teammate-card">
-                            <div class="teammate-card-header">
-                                <img src="src/img/images/block6/deda card 1.png" alt="deda card">
-                                <p><b>Dmitriy Khrustalev</b><br>Brand Manager</p>
-                            </div>
-                            <div class="teammate-card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam praesentium numquam optio reprehenderit, itaque perspiciatis dolore eveniet fuga rerum magni sunt non quis blanditiis deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="teammate-card-container">
-                        <img src="src/img/images/block6/yellow illustration block 6.png" alt="yellow illustration">
-                        <div class="teammate-card">
-                            <div class="teammate-card-header">
-                                <img src="src/img/images/block6/deda card 2.png" alt="deda card">
-                                <p><b>Oleh Bondarenko</b><br>Self employed</p>
-                            </div>
-                            <div class="teammate-card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam praesentium numquam optio reprehenderit, itaque perspiciatis dolore eveniet fuga rerum magni sunt non quis blanditiis deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="teammate-card-container">
-                        <img src="src/img/images/block6/green illustration block 6.png" alt="green illustration">
-                        <div class="teammate-card">
-                            <div class="teammate-card-header">
-                                <img src="src/img/images/block6/deda card 3.png" alt="deda card">
-                                <p><b>Sergei Poddubnyi</b><br>Business Analyst</p>
-                            </div>
-                            <div class="teammate-card-body">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam praesentium numquam optio reprehenderit, itaque perspiciatis dolore eveniet fuga rerum magni sunt non quis blanditiis deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary order">Order</button>
+          </div>
         </div>
-    </main>
-    <footer>
-        <div class="wrapper">
-            <div class="left-footer">
-                <p>Active Signature 2018</p>
-                <a href="#">Pricing</a>
-                <a href="#">Support</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="right-footer">
-                <p>Follow us:</p>
-                <div class="footer-social-box1">
-                    <a href=""><img src="src/img/images/footer/LIN.png" alt="LinkedIn logo"></a>
-                    <a href=""><img src="src/img/images/footer/FB.png" alt="Facebook logo"></a>
-                </div>
-                <div class="footer-social-box2">
-                    <a href=""><img src="src/img/images/footer/TW.png" alt="Twitter logo"></a>
-                    <a href=""><img src="src/img/images/footer/PIN.png" alt="Pinterest logo"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+      </div>
+    </div>
+    
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	
+  <script defer src="js/cart.js"></script>
+  <script defer src="js/product-list.js"></script>    
+  <script defer src="js/index.js"></script>
+  <script defer src="js/smooth-scroll.js"></script>
+  <script defer src="js/up-button.js"></script>
 </body>
 </html>
